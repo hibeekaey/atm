@@ -1,0 +1,20 @@
+<div class="header">
+  <span>Renewed Bank Africa</span><br>
+  <img class="logo" src="../img/logo.png" /><br>
+  <p>Select your Amount</p>
+</div>
+
+<div class="content">
+  <div class="flex flex--center-y flex--fill-y">
+    <div class="options">
+      <a ng-click="$ctrl.withdraw(1000)"><p>1. <span class="option"># 1,000</span></p></a>
+      <a ng-click="$ctrl.withdraw(2000)"><p>2. <span class="option"># 2,000</span></p></a>
+      <a ng-click="$ctrl.withdraw(5000)"><p>3. <span class="option"># 5,000</span></p></a>
+    </div>
+    <div class="options text-right">
+      <a ng-click="$ctrl.withdraw(10000)"><p><span class="option"># 10,000</span> .4</p></a>
+      <a ng-click="$ctrl.withdraw(20000)"><p><span class="option"># 20,000</span> .5</p></a>
+      <a href="#!/complete"><p><span class="option">OTHERS</span> .6</p></a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="header">
+  <span>Renewed Bank Africa</span><br>
+  <img class="logo" src="../img/logo.png" />
+  <p>Enter Account Number and Amount</p>
+</div>
+
+
+<div class="content flex flex-column flex--space-between flex--fill-y">
+  <div class="text-center">
+    <form id="transfer"></form>
+    <input for="transfer" id="account" ng-model="$ctrl.account" placeholder="Account Number" />
+    <input for="transfer" id="amount" ng-model="$ctrl.amount" placeholder="Amount" />
+  </div>
+  <div class="options text-right">
+    <a ng-click="$ctrl.transfer()"><p><span class="option">PROCEED</span></p></a>
+  </div>
+</div>
