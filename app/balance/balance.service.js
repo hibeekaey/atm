@@ -1,10 +1,10 @@
 'use strict';
 
-// Define check balance service
+// Define the `balance` service
 angular.
   module('balance').
   factory('Balance', ['$resource',
     function($resource) {
-      return $resource('https://fingerprint-atm-service.herokuapp.com/accounts/1');
+      return $resource('https://fingerprint-atm-service.herokuapp.com/accounts/:id');
     }
   ]);

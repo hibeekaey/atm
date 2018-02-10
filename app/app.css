@@ -1,3 +1,7 @@
+body {
+  font-size: 8pt;  
+}
+
 .atm {
   background-image: url(img/atm.png);
   background-size: auto 100vh;
@@ -33,13 +37,13 @@
 
 .header {
   text-align: center;
-  font-size: 12pt;
+  font-size: 9pt;
   line-height: 1.7;
 }
 
 .header span {
   font-weight: 600;
-  font-size: 18pt;
+  font-size: 15pt;
 }
 
 .logo {
@@ -50,6 +54,21 @@
 .content {
   flex: 1;
   padding: 10px;
+  overflow: hidden;
+}
+
+.content.scroll {
+  overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+	width: 4px;
+}
+
+.content::-webkit-scrollbar-thumb {
+	border: 1px solid rgba(255,255,255,.8);
+	border-radius: 2px;
+	background: rgba(0,0,0,.2);
 }
 
 .flex {
@@ -64,22 +83,35 @@
   align-items: center;
 }
 
+.flex--center-x  {
+   justify-content: center;
+}
+
 .flex--space-between {
   justify-content: space-between;
 }
 
-.flex-fill-y {
+.flex--space-around {
+  justify-content: space-around;
+}
+
+.flex--fill-y {
   height: 100%;
 }
 
 .scan-text {
   font-weight: 600;
-  font-size: 20pt;
+  font-size: 16pt;
 }
 
 .scan-fingerprint {
   width: auto;
-  height: 100px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.scan-fingerprint.small {
+  height: 50px;
 }
 
 .flex-row .options {
@@ -98,7 +130,7 @@
 }
 
 .invalid-container {
-  font-size: 20pt;
+  font-size: 16pt;
   line-height: 1;
 }
 
@@ -136,7 +168,7 @@ a:hover {
 }
 
 .text-h1 {
-  font-size: 18pt;
+  font-size: 15pt;
   font-weight: 600;
 }
 

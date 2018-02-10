@@ -1,6 +1,6 @@
 'use strict';
 
-// Define check balance service
+// Define the `transfer` service
 angular.
   module('transfer').
   factory('Transfer', ['$resource',

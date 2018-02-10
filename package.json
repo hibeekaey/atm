@@ -1,5 +1,5 @@
 {
-  "name": "angular-phonecat",
+  "name": "atm",
   "private": true,
   "version": "0.0.0",
   "description": "A tutorial application for AngularJS",
@@ -16,8 +16,6 @@
     "protractor": "^4.0.9"
   },
   "scripts": {
-    "postinstall": "bower install",
-    "prestart": "npm install",
     "start": "http-server ./app -a localhost -p 8000 -c-1",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",

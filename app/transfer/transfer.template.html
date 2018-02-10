@@ -5,11 +5,11 @@
 </div>
 
 
-<div class="content flex flex-column flex--space-between flex--fill-y">
+<div class="content flex flex-column flex--space-between flex--fill-y scroll">
   <div class="text-center">
     <form id="transfer"></form>
-    <input for="transfer" id="account" ng-model="$ctrl.account" placeholder="Account Number" />
-    <input for="transfer" id="amount" ng-model="$ctrl.amount" placeholder="Amount" />
+    <input for="transfer" id="account" type="number" ng-model="$ctrl.account" placeholder="Account Number" />
+    <input for="transfer" id="amount" type="number" ng-model="$ctrl.amount" placeholder="Amount" />
   </div>
   <div class="options text-right">
     <a ng-click="$ctrl.transfer()"><p><span class="option">PROCEED</span></p></a>

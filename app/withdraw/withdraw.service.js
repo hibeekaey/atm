@@ -1,6 +1,6 @@
 'use strict';
 
-// Define check balance service
+// Define the `withdraw` service
 angular.
   module('withdraw').
   factory('Withdraw', ['$resource',

@@ -1,11 +1,12 @@
 <div class="header">
   <span>Renewed Bank Africa</span><br>
-  <img class="logo" src="../img/logo.png" /><br>
+  <img class="logo" src="../img/logo.png" />
 </div>
 
-<div class="content flex flex--center-y flex--fill-y">
-  <span class="text-h1">Transaction Successful</span>
+<div class="content flex flex--center-y flex--center-x flex--fill-y text-center">
+  <span class="text-h1" ng-show="$ctrl.transaction.success">Transaction Successful</span>
+  <span class="text-h1" ng-hide="$ctrl.transaction.success">Transaction Unsuccessful</span>
 </div>
 
 
-<img ng-show="$ctrl.show" class="money" src="../img/money.png" />
+<img ng-show="$ctrl.transaction.cash" class="money" src="../img/money.png" />

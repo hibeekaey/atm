@@ -1,20 +1,20 @@
 <div class="header">
   <span>Renewed Bank Africa</span><br>
   <img class="logo" src="../img/logo.png" />
-  <p>Select your Transaction</p>
+  <p>Select your Transaction, {{$ctrl.transaction.name}}</p>
 </div>
 
 
 <div class="content">
-  <div class="flex flex--center-y flex--fill-y">
+  <div class="flex flex-row flex--center-y flex--fill-y">
     <div class="options">
-      <a href="#!/withdraw"><p>1. <span class="option">WITHDRAW</span></p></a>
-      <a href="#!/transfer"><p>2. <span class="option">TRANSFER</span></p></a>
+      <a href="#!/withdraw"><p>1. <span class="option">WITHDRAW</span></p></a><br>
+      <a href="#!/transfer"><p>2. <span class="option">TRANSFER</span></p></a><br>
       <a href="#!/balance"><p>3. <span class="option">BALANCE</span></p></a>
     </div>
     <div class="options text-right">
-      <a><p><span class="option">AIRTIME</span> .4</p></a>
-      <a><p><span class="option">BILLS</span> .5</p></a>
+      <a><p><span class="option">AIRTIME</span> .4</p></a><br>
+      <a><p><span class="option">BILLS</span> .5</p></a><br>
       <a><p><span class="option">OTHERS</span> .6</p></a>
     </div>
   </div>

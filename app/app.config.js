@@ -27,6 +27,9 @@ angular.
         when('/complete', {
           template: '<complete class="screen"></complete>'
         }).
+        when('/register', {
+          template: '<register class="screen"></register>'
+        }).
         otherwise('/scan');
     }
   ]);

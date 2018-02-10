@@ -3,10 +3,12 @@ angular.
   module('atmApp').
   component('complete', {
     templateUrl: 'complete/complete.template.html',
-    controller: ['$scope', '$location', '$timeout', '$http', function CompleteController($scope, $location, $timeout, $http) {
-        this.show = true;
-        $timeout(function () {
-          location.href = '#!/scan';
-        }, 2000);
+    controller: ['$timeout', 'transaction', function CompleteController($timeout, transaction) {
+      this.transaction = transaction;
+      transaction = {};
+      console.log(transaction);
+      $timeout(function () {
+        location.href = '#!/scan';
+      }, 2000);
     }]
   });

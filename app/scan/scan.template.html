@@ -3,10 +3,14 @@
   <img class="logo" src="../img/logo.png" />
 </div>
 
-
-<div class="content flex flex--center-y flex--space-between">
-  <span class="scan-text">
-    Scan your<br>Fingerprint
-  </span>
-  <img class="scan-fingerprint" src="../img/fingerprint.png" />
+<div class="content flex flex-column flex--space-around flex--fill-y">
+  <div class="flex flex--center-y flex--space-between">
+    <span class="scan-text">
+      Scan your<br>Fingerprint
+    </span>
+    <img class="scan-fingerprint" src="../img/fingerprint.png" ng-click="$ctrl.scan()" />
+  </div>
+  <div class="options text-right">
+    <a href="#!/register"><p><span class="option">REGISTER</span></p></a>
+  </div>
 </div>

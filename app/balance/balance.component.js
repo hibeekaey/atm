@@ -3,15 +3,19 @@ angular.
   module('atmApp').
   component('balance', {
     templateUrl: 'balance/balance.template.html',
-    controller: ['$http', 'Balance', function BalanceController($http, Balance) {
+    controller: ['Balance', '$location', 'transaction', function BalanceController(Balance, $location, transaction) {
       var that = this;
-        this.get_balance = Balance.get({}, {}, function(data) {
-            that.balance = data.data.balance;
-            console.log(data);
-          },
-          function(reply) {
-            console.log(reply);
-          }
-        );
+      this.transaction = transaction;
+      this.get_balance = Balance.get({ id: transaction.id }, function(data) {
+        console.log(data);
+        that.balance = data.data.balance;
+        if (!data.status) {
+          location.href = '#!/complete';
+        }
+      },
+      function(reply) {
+        console.log(reply);
+        location.href = '#!/complete';
+      });
     }]
   });
